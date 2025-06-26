@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    
+    display: flex; /*to make it go to center*/
+    justify-content: center;/*Horizontal*/
+    align-items: center;/*Vertical well not actually but yes- if we dont write this then the calculator automaticly covers entire height of the body. but by doing this it only covers what it needs*/
+    height: 100vh;/*we made the hight of the body (of this document) to not to be just how much the calculator took rahter the 100% of the view thus it will be at the middle correct*/
+
+    background-color: hsl(0, 0%, 95%);
+}
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 10px;
+    max-width: 500px;
+    overflow: hidden; /*For diaplay if we have a long equation*/
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+#keys{
+    display: grid; /*goota learn about grid*/
+    grid-template-columns: repeat(4,1fr);/*really need to learn about this*/
+    gap:10px;
+    padding: 25px;    
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 25%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 60%);
+}
+.operator{
+    background-color: hsl(35, 100%, 55%);
+}
+.operator:hover{
+    background-color: hsl(35, 100%, 65%);
+}
+.operator:active{
+    background-color: hsl(35, 100%, 85%);
+}
